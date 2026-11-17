@@ -1,0 +1,33 @@
+# ☠ ZombieInfection – config.yml (alles auch ueber /zombie im Menue einstellbar)
+game:
+  zombies: 1                  # Anzahl Zombies (heimlich ausgelost)
+  lobby-countdown: 5          # Sekunden Countdown bevor die Start-Border faellt
+  lobby-border-radius: 50     # Start-Border Radius in Bloecken
+  prep-time-seconds: 120      # roter Timer oben (Verstecken/Verteilen) bis zur Infektion
+  grace-seconds: 300          # Schutzphase: Zombies koennen noch NICHT angreifen
+  round-seconds: 900          # Jagd-Dauer. Laeuft sie ab, gewinnen die Ueberlebenden
+  game-border-radius: 750     # Spielfeld nach dem Start, 0 = keine Border
+  blind-seconds: 7            # Blindheit/Schwarzbild beim Infektions-Moment
+  zombie-respawn-seconds: 10  # Wartezeit (Spectator), wenn ein Zombie erlegt wurde
+  extra-hearts-per-kill: 3    # permanente Extra-Herzen (3 = +6 HP) wenn ein Ueberlebender einen Zombie toetet
+  max-extra-hearts: 15        # Obergrenze fuer Extra-Herzen pro Spieler
+
+display:
+  hide-names: true            # Nametags aller Spieler ausblenden
+  hide-tablist: true          # Spieler aus der Tab-Liste entfernen (Skin-Koepfe!)
+  disable-chat: true          # Chat waehrend der Runde sperren (Namen + Absprachen)
+
+features:
+  heartbeat: true             # 1 Herzschlag bei Zombie-Naehe
+  blood-night: true           # 2 Blutnacht: Nacht, Gewitter, Blitze
+  fog: true                   # 3 Nebel des Grauens (Dunkelheits-Pulse)
+  blood-rush: true            # 4 Blutrausch nach einer Infektion
+  groans: true                # 5 Zombie-Gebruell (Geraeusche in der Naehe)
+  last-survivor: true         # 6 Letzter Ueberlebender leuchtet
+  supply-drops: true          # 7 Nachschub-Kisten
+
+# Zombie-Skin: zombie_skin.png auf https://mineskin.org hochladen,
+# "Texture value" und "Signature" hier eintragen, dann /zombie reload
+skin:
+  value: ""
+  signature: ""

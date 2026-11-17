@@ -1,0 +1,18 @@
+name: ZombieInfection
+version: 1.0.0
+main: de.zombiegame.ZombiePlugin
+api-version: '26.3'
+description: Zombie-Infektions-Event mit Border-Countdown, Skin-Wechsel, Zombie-Kompass und Menue
+commands:
+  zombie:
+    description: Zombie-Steuerungsmenue
+    usage: /zombie [start|stop|reload|status]
+    permission: zombie.admin
+  start:
+    description: Startet die Zombie-Runde
+    usage: /start
+    permission: zombie.admin
+permissions:
+  zombie.admin:
+    description: Darf das Zombie-Event steuern
+    default: op
